@@ -62,14 +62,73 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-Include a chart
+**Description:**
+This bar chart shows the average number of drinks consumed per night out by students from different majors. 
+### Why:
+I chose to use a bar chart to depict the data between average drinks per night out and major because it is easy to read and understand. The bar chart allows the reader to quickly identify which bar corresponds to which major and see their average drinks per night. It also clearly shows which majors have higher or lower average numbers of drinks per night. When comparing a category with many options, such as academic majors, it is important to ensure the viewer can easily distinguish between the different categories. The bar chart achieves this by providing a straightforward visual comparison.
 
-Describe why you chose this chart and what information it reveals
+```{r, echo=FALSE, fig.width=12, fig.height=6}
+library(ggplot2)
+library(dplyr)
 
-Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+data <- read.csv("/Users/aaronli/Downloads/Stats survey.csv")
+
+
+names(data) <- c('Timestamp', 'Sex', 'Avg_GPA', 'Grade', 'Major',
+                 'Avg_GPA_2023', 'Accommodation_Status', 'Monthly_Allowance',
+                 'Scholarship_2023', 'Study_Hours_Per_Week', 'Party_Frequency',
+                 'Drinks_Per_Night_Out', 'Classes_Missed_Per_Week',
+                 'Classes_Failed', 'Romantic_Relationship', 'Parental_Approval_Alcohol',
+                 'Relationship_With_Parents')
+
+
+data$Major[data$Major == "" | is.na(data$Major)] <- "Undecided"
+
+
+data$Major <- as.factor(data$Major)
+
+
+
+
+
+clean_drinks <- function(x) {
+  
+  if (grepl("-", x)) {
+    parts <- strsplit(x, "-")[[1]]
+    return(mean(as.numeric(parts)))
+  }
+
+  if (grepl("\\+", x)) {
+    return(as.numeric(gsub("\\+", "", x)))
+  }
+  
+  return(as.numeric(x))
+}
+
+
+data$Drinks_Per_Night_Out <- sapply(data$Drinks_Per_Night_Out, clean_drinks)
+
+summary(data$Drinks_Per_Night_Out)
+
+average_drinks_per_major <- data %>%
+  group_by(Major) %>%
+  summarise(Average_Drinks = mean(Drinks_Per_Night_Out, na.rm = TRUE))
+
+
+average_drinks_per_major$Major <- factor(average_drinks_per_major$Major, levels = unique(average_drinks_per_major$Major))
+
+
+ggplot(average_drinks_per_major, aes(x = Major, y = Average_Drinks, fill = Major)) +
+  geom_bar(stat = "identity", color = "black", show.legend = FALSE) +
+  geom_text(aes(label = round(Average_Drinks, 2)), vjust = -0.5, size = 5) +  # Adjust text size and position
+  theme_minimal() +
+  labs(title = "Average Number of Drinks Consumed Per Night by Major",
+       x = "Major", y = "Average Drinks Per Night Out") +
+  theme(axis.title.x = element_text(size = 15),
+        axis.title.y = element_text(size = 15),
+        plot.title = element_text(size = 25, face = "bold"),
+        axis.text.x = element
 
 
 
