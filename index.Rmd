@@ -1,5 +1,5 @@
 ---
-title: "Exploratory Analysis"
+title: "Alcohol Consumption: At a Glance"
 output: html_document
 ---
 
@@ -9,7 +9,7 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members
+Aaron Li, Evan Sun, Arvin Hakakian, Annie Chang
 
 ### Date
 
@@ -70,6 +70,8 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
+
+
 
 ### Chart 2
 
