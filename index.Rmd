@@ -13,7 +13,7 @@ Aaron Li, Evan Sun, Arvin Hakakian, Annie Chang
 
 ### Date
 
-Winter 2022
+
 
 ### Abstract
 
@@ -63,9 +63,14 @@ Describe why you included the table and what information it reveals
 ### Chart 1
 
 **Description:**
+
 This bar chart shows the average number of drinks consumed per night out by students from different majors. 
-### Why:
+
+**Reason for Choosing a Bar Chart:**
+
 I chose to use a bar chart to depict the data between average drinks per night out and major because it is easy to read and understand. The bar chart allows the reader to quickly identify which bar corresponds to which major and see their average drinks per night. It also clearly shows which majors have higher or lower average numbers of drinks per night. When comparing a category with many options, such as academic majors, it is important to ensure the viewer can easily distinguish between the different categories. The bar chart achieves this by providing a straightforward visual comparison.
+
+Here's an example of how to run an R script inside an RMarkdown file:
 
 ```{r, echo=FALSE, fig.width=12, fig.height=6}
 library(ggplot2)
@@ -85,10 +90,7 @@ names(data) <- c('Timestamp', 'Sex', 'Avg_GPA', 'Grade', 'Major',
 
 data$Major[data$Major == "" | is.na(data$Major)] <- "Undecided"
 
-
 data$Major <- as.factor(data$Major)
-
-
 
 
 
@@ -109,7 +111,9 @@ clean_drinks <- function(x) {
 
 data$Drinks_Per_Night_Out <- sapply(data$Drinks_Per_Night_Out, clean_drinks)
 
+
 summary(data$Drinks_Per_Night_Out)
+
 
 average_drinks_per_major <- data %>%
   group_by(Major) %>%
@@ -121,14 +125,17 @@ average_drinks_per_major$Major <- factor(average_drinks_per_major$Major, levels 
 
 ggplot(average_drinks_per_major, aes(x = Major, y = Average_Drinks, fill = Major)) +
   geom_bar(stat = "identity", color = "black", show.legend = FALSE) +
-  geom_text(aes(label = round(Average_Drinks, 2)), vjust = -0.5, size = 5) +  # Adjust text size and position
+  geom_text(aes(label = round(Average_Drinks, 2)), vjust = -0.5, size = 5) +  
   theme_minimal() +
   labs(title = "Average Number of Drinks Consumed Per Night by Major",
        x = "Major", y = "Average Drinks Per Night Out") +
   theme(axis.title.x = element_text(size = 15),
         axis.title.y = element_text(size = 15),
         plot.title = element_text(size = 25, face = "bold"),
-        axis.text.x = element
+        axis.text.x = element_text(size = 12, angle = 45, hjust = 1),
+        axis.text.y = element_text(size = 12)) +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 10)) + 
+  scale_fill_brewer(palette = "Pastel1")
 
 
 
