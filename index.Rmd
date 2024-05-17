@@ -97,7 +97,7 @@ majors, it is important to ensure the viewer can easily distinguish
 between the different categories. The bar chart achieves this by
 providing a straightforward visual comparison.
 
-Here's an example of how to run an R script inside an RMarkdown file:
+
 
 \`\`\`{r, echo=FALSE, fig.width=12, fig.height=6} library(ggplot2)
 library(dplyr)
