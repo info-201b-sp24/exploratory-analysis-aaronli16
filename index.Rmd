@@ -8,8 +8,7 @@ editor_options:
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the
-entirety of your project
+Alcohol Consumption: At a Glance
 
 ### Authors
 
@@ -18,54 +17,82 @@ Aaron Li, Evan Sun, Arvin Hakakian, Annie Chang
 ### Date
 
 ### Abstract
-
-No more than three sentences that summarize your project. Focus on the
-very most important aspects. For example: (1) "Our main question is ....
-This question is important because .... To address the question, we will
-...." (2) "We are concerned with ..., because .... To address this
-concern, we plan to ...." (3) "Consider that .... This is important
-because .... Accordingly, we plan to ...."
+This study analyzes student alcohol consumption data to identify patterns and trends, employing statistical techniques and standard data visualizations. Key findings include the identification of high-risk groups and the influence of social and environmental factors on drinking behavior. The results provide valuable insights for developing targeted interventions and policies to promote responsible alcohol use among students.
 
 ### Keywords
 
-3-5 keywords that summarize your project. (e.g., "Keywords: human
-physiology; bicycle exercise; Gen Z; times-series data")
+Keywords: Alcohol Epidemiology;
+Universities and Colleges;
+Student Behavioral Factors;
+Population Health;
 
 ### Introduction
 
-Briefly introduce your project. Include 3-5 research questions. What
-motivates the questions? Why are they important? (at least 200 words)
+Navigating university comes with its own set of challenges, not least of which is the role that lifestyle choices play in a student’s academic performance, such as consumption of alcohol.
+
+We aim to delve into how drinking impacts students in university in many different aspects of their life, and especially how it correlates with their personal, academic and social life. We're motivated by a desire to understand and mitigate the potential negative effects of drinking on student success.
+
+The questions that we came up with below are important because they address and inform us of the intersections of student behavior, academic disciplines, and personal backgrounds. For example, it’s important to know if students in certain majors tend to drink more and if that affects their grades. Also, this data, and the correlations within it, can help in making more effective educational and preventive strategies.
+
+Here are the five research questions we will explore:
+
+1. How does alcohol consumption correlate with the student's major?
+
+2. What impact does alcohol consumption have on students' grades within each major?
+
+3. How do parental attitudes and relationships influence a student's drinking habits?
+
+4. Is there a difference in drinking frequency between students who are on scholarships and those who are not?
+
+5. How do living arrangements affect students' alcohol consumption patterns?
+
+These questions are designed to give us a comprehensive view of how alcohol consumption correlates with academic and social life of students, aiming to inform better support structures for students.
 
 ### Related Work
 
-Describe your topic and related work in this space. You must include 3
-citations to related work (URLs to similar work, high quality articles
-from the popular press, research papers, etc. ) Please use a standard
-citation style of your choice. (at least 200 words)
+In a survey of almost eighteen-thousand students spread across 140 college campuses conducted in 1993, a team of researchers associated with the Harvard School of Public Health found that almost half(44%) of college students could be categorized as 'binge drinkers' [1]. This alarming discovery of excessive alcohol consumption among students shed light on a population health problem still plaguing campuses to this day. Further research has only revealed student alcohol consumption as a complex issue rooted in numerous factors, including social norms, religion, parental influence [2], and more. In fact, with the advent of technology in daily life, the problem has only become more complicated as recent studies point to a relationship between social media use and alcohol consumption [3]. With colleges continuing to accept newer generations onto their campuses, there will undoubtedly be new factors that arise in the problem of alcohol abuse. Thus it's imperative that we focus on a holistic approach to mitigating the harms of the issue through informed statistical analysis and highlighting patterns with novel data visualizations. With that in mind, our plan for this project will be to build upon the ongoing effort by applying statistical analysis techniques and novel data visualizations to examine how known factors may interact/compound with each other to affect drinking behavior.
+
+References:
+
+1. Wechsler, H et al. “Health and behavioral consequences of binge drinking in college. A national survey of students at 140 campuses.” JAMA vol. 272,21 (1994): 1672-7.
+
+2. Paschall, Mallie J, and Robert L Flewelling. “Postsecondary education and heavy drinking by young adults: the moderating effect of race.” Journal of studies on alcohol vol. 63,4 (2002): 447-55. doi:10.15288/jsa.2002.63.447
+
+3. Moreno, Megan A, and Jennifer M Whitehill. “Influence of Social Media on Alcohol Use in Adolescents and Young Adults.” Alcohol research : current reviews vol. 36,1 (2014): 91-100.
+
 
 ### The Dataset
+Dataset:
 
-Where did you find the data? Please include a link to the data source\
-Who collected the data?\
-How was the data collected or generated?\
-Why was the data collected?\
-How many observations (rows) are in your data?\
-How many features (columns) are in the data?\
-What, if any, ethical questions or questions of power do you need to
-consider when working with this data?\
-What are possible limitations or problems with this data? (at least 200
-words)
+- Effects of Alcohol on Student Performance
+- Who collected the data?
+Joshua Naude and Jordan Bendeman, students at Stellenbosch University's Department of Statistics and Actuarial Science
+- How was the data collected or generated?
+It was collected via a google form survey, then exported to csv.
+- Why was the data collected?
+The authors wanted to predict sstudents academic performance using a multilinear regression model built on the predictors mentioned based on 2023 student information.
+- How many observations (rows) are in your data?
+406 observations
+- How many features (columns) are in the data?
+17 features
+- What, if any, ethical questions or questions of power do you need to consider when working with this data?
+In working with this data, we will look to acknowledge how each entry represents a student with their own struggles against systemic, cultural, financial, and other disadvantages. Thus, we will try to clearly communicate that any findings or correlations in the data should not be used to predict, single out, or otherwise harass individuals.
+What are possible limitations or problems with this data?
+The first limitation with the data is that it describes a South African university, meaning that the trends/patterns that emerge in the data may not be applicable to other countries like the US. On top of that, the sample size is relatively low when compared to other research on the topic. With only 406 entries it leaves the data vulnerable to outliers and may not give a proper distribution of data. When looking at the data collection methodology, there were no verification measures taken to ensure accurarcy of the data, meaning that some students may have underreported or overreported due to biases like social desirability. Since the data was self-reported it also means a heavy bias in excluding those who aren't willing to report their alcohol consumption, ie drinkers who are embarassed or ashamed with their consumption. For the features themselves, almost all of them are categorical, meaning that some accuracy may be lost due to users having to choose a choice that isnt fully accurate to their situation. The data was also collected only for 2023 meaning a lack of historical trends to back up any patterns/correlations found. Although the data gives a wide breadth of possible variables to work with, it doesnt provide a totally comprehensive list of variables meaning it is possible for underlying variables not listed to affect the data.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the
-expected or possible implications for technologists, designers, and
-policymakers. (at least 150 words)
+Looking into the link between drinking and other factors in school can have big effects on programs that help students and the rules that universities follow. If you look at the link between differences in alcohol use by major and grades, for example, you might find places where certain groups of students need extra health care and help. This could reveal patterns in the stress levels or academic cultures of other fields. Also, university health programs might be able to use more effective ways to deal with people if they know how parents' thoughts and actions affect their children's drinking habits.
+
+Because of these results, designers might come up with targeted lessons that appeal to different types of students, and engineers might create special apps to help students who are at risk keep track of their schedules and get help. Lawmakers could use this knowledge to make alcohol rules on campuses more complicated, which could help students do better in school and in their health. This broad plan would help create a responsive and supportive school environment while also reducing the problems that come with drinking.
 
 ### Limitations & Challenges
 
-What challenges or limitations might you need to address with your
-project idea more broadly? Briefly discuss. (at least 150 words)
+One significant challenge is ensuring the reliability and accuracy of the data collected, especially considering it's self-reported. There's always a risk of biases influencing responses, where participants might underreport their alcohol consumption due to stigma or overreport to fit perceived norms. Additionally, the dataset's size is relatively small, which might limit the generalizability of findings.
+
+Another challenge is the potential lack of historical data. This makes it difficult to identify trends over time. The dataset primarily consists of categorical variables, which might oversimplify the analysis. Lastly, since the data is from Stellenbosch University in South Africa, it may not fully reflect the experiences of students in other countries, impacting the applicability of findings to broader contexts.
+
+Addressing these challenges requires careful consideration of data quality, robust analysis techniques, and acknowledgment of potential limitations in interpretation and generalization. Efforts to supplement the dataset with additional sources of information or to conduct follow-up studies could help mitigate some of these challenges and provide a more comprehensive understanding of the relationship between alcohol consumption and student performance.
 
 ### Summary Information
 
