@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 
-data <- read.csv("/Users/aaronli/Downloads/Stats survey.csv")
+data <- read.csv("https://drive.google.com/uc?export=download&id=1skt9wt6XkT1O8zBC3DKvZG988pnHKGC_")
 
 
 names(data) <- c('Timestamp', 'Sex', 'Avg_GPA', 'Grade', 'Major',
