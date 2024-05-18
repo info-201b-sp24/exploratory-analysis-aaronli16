@@ -41,5 +41,5 @@ ggplot(data, aes(x = Parental_Approval_Alcohol, y = Relationship_With_Parents, f
         plot.title = element_text(hjust = 0.5, face = "bold"),
         legend.position = "bottom",
         legend.title = element_text(face = "bold")) +
-  guides(fill = guide_legend(title.position = "top", title.hjust = 0.5))
-
+  guides(fill = guide_legend(title.position = "top", title.hjust = 0.5)) +
+  scale_y_discrete(limits = c("Fair", "Close", "Very close"))
