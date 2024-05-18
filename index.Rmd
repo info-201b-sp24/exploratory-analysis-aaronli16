@@ -179,6 +179,18 @@ between them.
 
 ### Chart 3
 
-Include a chart
+**Description:**
 
-Describe why you chose this chart and what information it reveals
+This heat map illustrates the effect that parental relationships and 
+attitude have on a student's alcohol consumption
+
+**Reason for Choosing a box plot chart:**
+
+A heat map was chosen to display the data because it was the most effective option, 
+for showing alcohol consumption in relation to both approval and relationship. With 
+color intensity representing the amount of alcohol consumed, patterns like the fact 
+that students without parental approval of alcohol seem to be prone to consuming 
+more alcohol arise pretty clearly just by comparing the shade of red in each spot.
+
+```{r, echo = FALSE, message=FALSE, results = FALSE, warning=FALSE, code = readLines("ParentAlc.R")}
+```
