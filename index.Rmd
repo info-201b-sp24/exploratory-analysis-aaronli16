@@ -17,7 +17,9 @@ Aaron Li, Evan Sun, Arvin Hakakian, Annie Chang
 ### Date
 
 ### Abstract
-This study analyzes student alcohol consumption data to identify patterns and trends, employing statistical techniques and standard data visualizations. Key findings include the identification of high-risk groups and the influence of social and environmental factors on drinking behavior. The results provide valuable insights for developing targeted interventions and policies to promote responsible alcohol use among students.
+This study analyzes student alcohol consumption data to identify patterns and trends, employing statistical techniques and standard data visualizations.
+Key findings include the identification of high-risk groups and the influence of social and environmental factors on drinking behavior.
+The results provide valuable insights for developing targeted interventions and policies to promote responsible alcohol use among students.
 
 ### Keywords
 
@@ -28,11 +30,13 @@ Population Health;
 
 ### Introduction
 
-Navigating university comes with its own set of challenges, not least of which is the role that lifestyle choices play in a student’s academic performance, such as consumption of alcohol.
+Navigating university comes with its own set of challenges, not least of which is the role that lifestyle choices play in a student's academic performance, such as consumption of alcohol.
 
-We aim to delve into how drinking impacts students in university in many different aspects of their life, and especially how it correlates with their personal, academic and social life. We're motivated by a desire to understand and mitigate the potential negative effects of drinking on student success.
+We aim to delve into how drinking impacts students in university in many different aspects of their life, and especially how it correlates with their personal, academic and social life.
+We're motivated by a desire to understand and mitigate the potential negative effects of drinking on student success.
 
-The questions that we came up with below are important because they address and inform us of the intersections of student behavior, academic disciplines, and personal backgrounds. For example, it’s important to know if students in certain majors tend to drink more and if that affects their grades. Also, this data, and the correlations within it, can help in making more effective educational and preventive strategies.
+The questions that we came up with below are important because they address and inform us of the intersections of student behavior, academic disciplines, and personal backgrounds.
+For example, it's important to know if students in certain majors tend to drink more and if that affects their grades. Also, this data, and the correlations within it, can help in making more effective educational and preventive strategies.
 
 Here are the five research questions we will explore:
 
@@ -50,7 +54,11 @@ These questions are designed to give us a comprehensive view of how alcohol cons
 
 ### Related Work
 
-In a survey of almost eighteen-thousand students spread across 140 college campuses conducted in 1993, a team of researchers associated with the Harvard School of Public Health found that almost half(44%) of college students could be categorized as 'binge drinkers' [1]. This alarming discovery of excessive alcohol consumption among students shed light on a population health problem still plaguing campuses to this day. Further research has only revealed student alcohol consumption as a complex issue rooted in numerous factors, including social norms, religion, parental influence [2], and more. In fact, with the advent of technology in daily life, the problem has only become more complicated as recent studies point to a relationship between social media use and alcohol consumption [3]. With colleges continuing to accept newer generations onto their campuses, there will undoubtedly be new factors that arise in the problem of alcohol abuse. Thus it's imperative that we focus on a holistic approach to mitigating the harms of the issue through informed statistical analysis and highlighting patterns with novel data visualizations. With that in mind, our plan for this project will be to build upon the ongoing effort by applying statistical analysis techniques and novel data visualizations to examine how known factors may interact/compound with each other to affect drinking behavior.
+In a survey of almost eighteen-thousand students spread across 140 college campuses conducted in 1993, a team of researchers associated with the Harvard School of Public Health found that almost half(44%) of college students could be categorized as 'binge drinkers' [1].
+This alarming discovery of excessive alcohol consumption among students shed light on a population health problem still plaguing campuses to this day. Further research has only revealed student alcohol consumption as a complex issue rooted in numerous factors, including social norms, religion, parental influence [2], and more.
+In fact, with the advent of technology in daily life, the problem has only become more complicated as recent studies point to a relationship between social media use and alcohol consumption [3].
+With colleges continuing to accept newer generations onto their campuses, there will undoubtedly be new factors that arise in the problem of alcohol abuse. Thus it's imperative that we focus on a holistic approach to mitigating the harms of the issue through informed statistical analysis and highlighting patterns with novel data visualizations.
+With that in mind, our plan for this project will be to build upon the ongoing effort by applying statistical analysis techniques and novel data visualizations to examine how known factors may interact/compound with each other to affect drinking behavior.
 
 References:
 
@@ -88,11 +96,16 @@ Because of these results, designers might come up with targeted lessons that app
 
 ### Limitations & Challenges
 
-One significant challenge is ensuring the reliability and accuracy of the data collected, especially considering it's self-reported. There's always a risk of biases influencing responses, where participants might underreport their alcohol consumption due to stigma or overreport to fit perceived norms. Additionally, the dataset's size is relatively small, which might limit the generalizability of findings.
+One significant challenge is ensuring the reliability and accuracy of the data collected, especially considering it's self-reported. 
+There's always a risk of biases influencing responses, where participants might underreport their alcohol consumption due to stigma or overreport to fit perceived norms. 
+Additionally, the dataset's size is relatively small, which might limit the generalizability of findings.
 
-Another challenge is the potential lack of historical data. This makes it difficult to identify trends over time. The dataset primarily consists of categorical variables, which might oversimplify the analysis. Lastly, since the data is from Stellenbosch University in South Africa, it may not fully reflect the experiences of students in other countries, impacting the applicability of findings to broader contexts.
+Another challenge is the potential lack of historical data. 
+This makes it difficult to identify trends over time. The dataset primarily consists of categorical variables, which might oversimplify the analysis. 
+Lastly, since the data is from Stellenbosch University in South Africa, it may not fully reflect the experiences of students in other countries, impacting the applicability of findings to broader contexts.
 
-Addressing these challenges requires careful consideration of data quality, robust analysis techniques, and acknowledgment of potential limitations in interpretation and generalization. Efforts to supplement the dataset with additional sources of information or to conduct follow-up studies could help mitigate some of these challenges and provide a more comprehensive understanding of the relationship between alcohol consumption and student performance.
+Addressing these challenges requires careful consideration of data quality, robust analysis techniques, and acknowledgment of potential limitations in interpretation and generalization. 
+Efforts to supplement the dataset with additional sources of information or to conduct follow-up studies could help mitigate some of these challenges and provide a more comprehensive understanding of the relationship between alcohol consumption and student performance.
 
 ### Summary Information
 
